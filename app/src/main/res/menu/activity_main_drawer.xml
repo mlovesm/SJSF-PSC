@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_menu1" android:icon="@drawable/ic_menu_default" android:title="공통" />
+        <item android:id="@+id/nav_menu1_1"  android:title="    공지사항" />
+        <item android:id="@+id/nav_menu1_2"  android:title="    사람찾기" />
+        <item android:id="@+id/nav_menu1_3"  android:title="    무재해현황판" />
+        <item android:id="@+id/nav_menu1_4"  android:title="    작업개소현황" />
+
+        <item android:id="@+id/nav_menu2" android:icon="@drawable/ic_menu_default" android:title="안전" />
+        <item android:id="@+id/nav_menu2_1"  android:title="    동료사랑카드" />
+        <item android:id="@+id/nav_menu2_2"  android:title="    작업기준" />
+        <item android:id="@+id/nav_menu2_3"  android:title="    위험기계사용점검" />
+
+        <item android:id="@+id/nav_menu3" android:icon="@drawable/ic_menu_default" android:title="혁신" />
+        <item android:id="@+id/nav_menu3_1"  android:title="    QSS 활동계획조회" />
+        <item android:id="@+id/nav_menu3_2"  android:title="    아이디어낙서방" />
+
+        <item android:id="@+id/nav_menu4" android:icon="@drawable/ic_menu_default" android:title="인사노무" />
+        <item android:id="@+id/nav_menu4_1"  android:title="    연장근무현황" />
+        <item android:id="@+id/nav_menu4_2"  android:title="    연차현황" />
+        <item android:id="@+id/nav_menu4_3"  android:title="    급여명세서" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/nav_log_out" android:icon="@drawable/ic_menu_default"
+                android:title="로그아웃" />
+        </menu>
+    </item>
+
+</menu>

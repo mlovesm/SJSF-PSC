@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/inc_top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/layout_top"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp">
+
+        <!-- 추가정보 -->
+        <LinearLayout
+            android:id="@id/linearLayout1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!-- title -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:background="@color/title_bg"
+                >
+                <ImageView
+                    android:id="@id/imageView1"
+                    android:layout_width="28.0dip"
+                    android:layout_height="28.0dip"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_info_black_24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_toRightOf="@id/imageView1"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="월중행사계획표"
+                    />
+            </RelativeLayout>
+            <!-- 라인 -->
+            <LinearLayout
+                android:background="@color/gary_line"
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"/>
+
+            <!-- 등록-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_bottom"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_bottom_l"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapCharacters"
+                        android:textColor="@color/font_333"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="제목"
+                        android:textColorHint="@color/font_666"
+                        android:backgroundTint="@color/transparency"
+                        android:padding="10dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:background="@drawable/border_bottom_l"
+                    android:orientation="vertical"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:textColor="@color/font_333"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="내용"
+                        android:textColorHint="@color/font_666"
+                        android:backgroundTint="@color/transparency"
+                        android:padding="10dp"/>
+                </LinearLayout>
+            </LinearLayout><!-- //내용-->
+
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 버튼 -->
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <LinearLayout android:background="@color/blue" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1.0">
+            <TextView android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/font_navtitle"
+                android:gravity="center"
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PUSH" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/colorPrimary" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1.0">
+            <TextView android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/font_navtitle"
+                android:gravity="center"
+                android:id="@id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="저장" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/gary_dark2" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1.0">
+
+            <TextView android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/font_navtitle"
+                android:gravity="center"
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="삭제" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

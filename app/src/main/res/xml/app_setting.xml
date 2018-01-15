@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="설정">
+
+    <!--<PreferenceCategory android:title="업데이트설정" >-->
+        <!--<SwitchPreference-->
+            <!--android:defaultValue="false"-->
+            <!--android:key="autoUpdate"-->
+            <!--android:summary="자동 업데이트를 설정합니다"-->
+            <!--android:switchTextOff="OFF"-->
+            <!--android:switchTextOn="ON"-->
+            <!--android:title="자동 업데이트" />-->
+
+        <!--<CheckBoxPreference-->
+            <!--android:defaultValue="false"-->
+            <!--android:dependency="autoUpdate"-->
+            <!--android:key="useUpdateNofiti"-->
+            <!--android:title="알림 사용"-->
+            <!--android:summary="업데이트후 알림을 띄웁니다." />-->
+
+        <!--<RingtonePreference-->
+            <!--android:defaultValue="content://settings/system/notification_sound"-->
+            <!--android:dependency="useUpdateNofiti"-->
+            <!--android:key="autoUpdate_ringtone"-->
+            <!--android:ringtoneType="notification"-->
+            <!--android:showSilent="true"-->
+            <!--android:title="알림 소리" />-->
+    <!--</PreferenceCategory>-->
+
+    <android.support.v7.preference.PreferenceCategory android:title="NFC 설정" >
+        <android.support.v7.preference.Preference
+            android:key="nfc_submit"
+            android:title="NFC Tagging"
+            android:summary="NFC 태그에 접촉해서 정보를 호출 합니다."/>
+        <android.support.v7.preference.Preference
+            android:key="nfc_read"
+            android:title="NFC 읽기"
+            android:summary="NFC 태그 내용을 불러옵니다."/>
+        <android.support.v7.preference.Preference
+            android:key="nfc_write"
+            android:title="NFC 쓰기"
+            android:summary="NFC 태그에 내용을 작성합니다."/>
+        <android.support.v7.preference.Preference
+            android:key="nfc_setting"
+            android:title="NFC 환경설정"
+            android:summary="NFC 환경설정"/>
+
+    </android.support.v7.preference.PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "806203744767",
+    "firebase_url": "https://sjsf-test.firebaseio.com",
+    "project_id": "sjsf-test",
+    "storage_bucket": "sjsf-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806203744767:android:890a193174667f9a",
+        "android_client_info": {
+          "package_name": "com.creative.himec.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806203744767-b25pnif6jkb8p1hm7mjm2o1uh13egdlp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfWm-hQ4V-IZprYeFwZbI3fhu4GPfvizg"
+        },
+        {
+          "current_key": "AIzaSyAhToMQbBniNjbZw6NmIVW09cn4TYgbFX0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806203744767:android:1800e34a49bb4234",
+        "android_client_info": {
+          "package_name": "com.creative.psc.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806203744767-b25pnif6jkb8p1hm7mjm2o1uh13egdlp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfWm-hQ4V-IZprYeFwZbI3fhu4GPfvizg"
+        },
+        {
+          "current_key": "AIzaSyAhToMQbBniNjbZw6NmIVW09cn4TYgbFX0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
