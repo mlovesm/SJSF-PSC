@@ -86,19 +86,16 @@ public class MainFragment extends Fragment {
 //        }
 //    }
 
-    protected void onAttachToContext(Context context) {
-        this.mActivity = (Activity) context;
-    }
+//    protected void onAttachToContext(Context context) {
+//        this.mActivity = (Activity) context;
+//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.main, container, false);
         ButterKnife.bind(this, view);
         view.findViewById(R.id.top_home).setVisibility(View.GONE);
-//        RelativeLayout linearLayout = (RelativeLayout) view.findViewById(R.id.top_line);
-//        ViewGroup.LayoutParams param = new ViewGroup.LayoutParams
-//                (ViewGroup.LayoutParams.MATCH_PARENT, 0);
-//        linearLayout.setLayoutParams(param);
+
         pref = new SettingPreference("loginData",getActivity());
 
         loginSabun = pref.getValue("sabun_no","").trim();

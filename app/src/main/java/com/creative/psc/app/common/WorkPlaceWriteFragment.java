@@ -46,6 +46,7 @@ public class WorkPlaceWriteFragment extends Fragment {
     private static final String TAG = "WorkPlaceWriteFragment";
     private RetrofitService service;
 
+    private String title;
     private String mode="";
     private String idx="";
     private String dataSabun;
@@ -81,17 +82,19 @@ public class WorkPlaceWriteFragment extends Fragment {
         service= RetrofitService.rest_api.create(RetrofitService.class);
 
         mode= getArguments().getString("mode");
+        title=getArguments().getString("title");
+        UtilClass.logD(TAG, "title="+title);
         view.findViewById(R.id.top_save).setVisibility(View.VISIBLE);
 
         if(mode.equals("insert")){
             dataSabun= MainFragment.loginSabun;
             view.findViewById(R.id.linear2).setVisibility(View.GONE);
-            textTitle.setText("작업자위치 작성");
+            textTitle.setText(title+" 작성");
             tv_date.setText(UtilClass.getCurrentDate(1, "."));
 
             tv_writerName.setText(MainFragment.loginName);
         }else{
-            textTitle.setText("작업자위치 수정");
+            textTitle.setText(title+" 수정");
             idx= getArguments().getString("idx");
             async_progress_dialog();
         }

@@ -213,7 +213,6 @@ public class WebFragment extends Fragment {
                     builder.setTitle("Error");
                     builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-//                            Fragment fm = getFragmentManager().findFragmentByTag("dfdf");
                             getActivity().finish();
                         }
                     });

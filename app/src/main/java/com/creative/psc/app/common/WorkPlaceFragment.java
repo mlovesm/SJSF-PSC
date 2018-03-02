@@ -117,6 +117,7 @@ public class WorkPlaceFragment extends Fragment {
         Bundle bundle = new Bundle();
 
         bundle.putString("mode","insert");
+        bundle.putString("title", title);
         frag.setArguments(bundle);
 
         FragmentManager fm = getFragmentManager();
@@ -136,10 +137,11 @@ public class WorkPlaceFragment extends Fragment {
             FragmentManager fm = getFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
             fragmentTransaction.replace(R.id.fragmentReplace, frag = new WorkPlaceWriteFragment());
-            bundle.putString("title",title+"상세");
+
             String key= arrayList.get(position).get("key");
             bundle.putString("idx", key);
             bundle.putString("mode", "update");
+            bundle.putString("title", title);
 
             frag.setArguments(bundle);
             fragmentTransaction.addToBackStack(title+"상세");
