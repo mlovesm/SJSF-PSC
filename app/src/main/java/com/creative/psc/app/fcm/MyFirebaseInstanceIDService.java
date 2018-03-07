@@ -32,27 +32,6 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
         String token = FirebaseInstanceId.getInstance().getToken();
         UtilClass.logD(TAG, "최초 token: " + token);
 
-//        PermissionListener permissionlistener = new PermissionListener() {
-//            @Override
-//            public void onPermissionGranted() {
-//                Toast.makeText(getApplicationContext(), "권한 허가", Toast.LENGTH_SHORT).show();
-//                phone_num= getPhoneNumber();
-//                Log.d(TAG,"phone_num="+phone_num);
-//            }
-//
-//            @Override
-//            public void onPermissionDenied(ArrayList<String> deniedPermissions) {
-//                Toast.makeText(getApplicationContext(), "권한 거부 목록\n" + deniedPermissions.toString(), Toast.LENGTH_SHORT).show();
-//            }
-//        };
-//        new TedPermission(this)
-//                .setPermissionListener(permissionlistener)
-////                .setRationaleMessage("전화번호 정보를 가져오기 위해선 권한이 필요합니다.")
-//                .setDeniedMessage("권한을 확인하세요.\n\n [설정] > [애플리케이션] [해당앱] > [권한]")
-//                .setGotoSettingButtonText("권한확인")
-//                .setPermissions(Manifest.permission.READ_PHONE_STATE)
-//                .check();
-
         // 생성등록된 토큰을 개인 앱서버에 보내 저장해 두었다가 추가 뭔가를 하고 싶으면 할 수 있도록 한다.
         //sendRegistrationToServer(token);
     }

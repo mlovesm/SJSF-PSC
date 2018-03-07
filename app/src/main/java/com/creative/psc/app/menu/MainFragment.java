@@ -1,21 +1,17 @@
 package com.creative.psc.app.menu;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.telephony.TelephonyManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.creative.psc.app.R;
@@ -43,7 +39,6 @@ public class MainFragment extends Fragment {
 //    adb shell dumpsys activity activities | findstr "Run"
     private static final String TAG = "MainFragment";
     public static String ipAddress= "http://119.202.60.106:8585";
-//    public static String ipAddress= "http://59.11.9.94:9090";
 //    public static String ipAddress= "http://192.168.0.22:9191";
     public static String contextPath= "/sjsf_psc";
     private ProgressDialog pDlalog = null;
@@ -54,7 +49,6 @@ public class MainFragment extends Fragment {
     public static boolean onAppCheck= false;
     public static String pendingPath= "";
     public static String pendingPathKey= "";
-    private Activity mActivity;
 
     private PermissionListener permissionlistener;
 
@@ -65,30 +59,6 @@ public class MainFragment extends Fragment {
     public static String part1_cd;
     public static String part2_cd;
     public static String latestAppVer;
-
-//    @Override public void onAttach(Context context) {
-//        //This method avoid to call super.onAttach(context) if I'm not using api 23 or more
-//        if (Build.VERSION.SDK_INT >= 23) {
-//            super.onAttach(context);
-//            onAttachToContext(context);
-//        }
-//    }
-//
-//    /*
-//     * Deprecated on API 23
-//     * Use onAttachToContext instead
-//     */
-//    @SuppressWarnings("deprecation")
-//    @Override public void onAttach(Activity activity) {
-//        super.onAttach(activity);
-//        if (Build.VERSION.SDK_INT < 23) {
-//            onAttachToContext(activity);
-//        }
-//    }
-
-//    protected void onAttachToContext(Context context) {
-//        this.mActivity = (Activity) context;
-//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

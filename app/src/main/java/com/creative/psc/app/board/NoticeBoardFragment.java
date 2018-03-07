@@ -77,14 +77,8 @@ public class NoticeBoardFragment extends Fragment {
                         arrayList = new ArrayList<>();
                         arrayList.clear();
                         for(int i=0; i<response.body().getList().size();i++){
-                            for (Iterator iter = response.body().getList().get(i).entrySet().iterator(); iter.hasNext();) {
-                                Map.Entry entry = (Map.Entry) iter.next();
-                                String key = (String)entry.getKey();
+                            UtilClass.dataNullCheckZero(response.body().getList().get(i));
 
-                                if(entry.getValue()==null){
-                                    entry.setValue("");
-                                }
-                            }
                             HashMap<String,String> hashMap = new HashMap<>();
 //                            hashMap.put("key",Double.valueOf((double) response.body().getList().get(i).get("push_key")).intValue());
                             hashMap.put("key",response.body().getList().get(i).get("push_key"));
